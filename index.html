@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,7 @@
     <link rel="icon" href="./img/logo.jpeg">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Pizzaria Emanuelly</title>
 </head>
 <body class="bg-light">
@@ -34,7 +33,14 @@
                         <input type="text" placeholder="Ex.: Rua X, 129" class="form-control" id="enderco" required>
                     </div>
                     <div class="mb-4">
-                        <label for="inputState">Pizza <span style="color: red;">*</span></label>
+                    <label for="" class="form-label">Menu</label><br>
+                    <button type="button" id="opcPizza" class="btn btn-primary mt-1">Pizzas</button>
+                    <button type="button" id="opcHamburguer" class="btn btn-primary mt-1">Hambúrgueres</button>
+                    <button type="button" class="btn btn-primary mt-1">Guloseimas</button>
+                    <button type="button" id="opcBebidaSuco" class="btn btn-primary mt-1">Bebidas e Sucos</button>
+                    </div>
+                    <div class="mb-4" id="pizzas">
+                        <label for="inputState">Pizza<span style="color: red;">*</span></label>
                         <select id="pizza" class="form-select" aria-label="Click para abir as opções de pizzas">
                             <option value="">Click para abir as opções de pizzas</option>
                             <option value="Pizza de Calabresa">Calabresa</option>
@@ -50,7 +56,7 @@
                             <option value="Pizza doce - chocolate e Cartola">Chocolate e Cartola</option>                            
                         </select>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4" id="tamanhos">
                         <label for="inputState">Tamanho da pizza <span style="color: red;">*</span></label>
                         <select id="tamanho" class="form-select" aria-label="Default select example">
                             <option value="">Selecione o tamanho da Pizza</option>
@@ -61,16 +67,17 @@
                             <option value="Tamanho XG">Tamanho: XG</option>
                         </select>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4" id="bordas">
                         <label for="inputState">Borda<span style="color: red;">*</span></label>
                         <select id="borda" class="form-select" aria-label="Default select example">
                             <option value="">Selecione o tipo de borda</option>
                             <option value="Borda: Catupiry">Catupiry</option>
                             <option value="Borda: Chocolate">Chocolate</option>
+                            <option value="Borda: Sem borda">Sem borda</option>
                         </select>
                     </div>
                    
-                    <div class="mb-4">
+                    <div class="mb-4" id="hamburgueres">
                         <label for="inputState">Hambúrguer <span style="color: red;">*</span></label>
                         <select id="hamburguer" class="form-select" aria-label="Default select example">
                             <option value="">Click para abir as opções de Hambúrgueres</option>
@@ -83,8 +90,8 @@
                             <option value="A moda da casa">A moda da casa</option>
                         </select>
                     </div>
-                    <div class="mb-4">
-                        <label for="inputState">Bebidas <span style="color: red;">*</span></label>
+                    <div class="mb-4" id="bebidasSucos">
+                        <label for="inputState">Bebidas e Sucos <span style="color: red;">*</span></label>
                         <select id="bebidas" class="form-select" aria-label="Default select example">
                             <option value="">Click para abir as opções de bebidas</option>
                             <option value="Bebida: Coca-cola 2L">Coca-cola 2L</option>
@@ -114,6 +121,14 @@
                             <option value="Pix">Pix</option>
                             <option value="Dinheiro físico">Dinheiro físico</option>
                             <option value="Cartão">Cartão</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputState">Forma de retirada: <span style="color: red;">*</span></label>
+                        <select id="retirada" class="form-select" aria-label="Default select example">
+                            <option value="">Click para abir as formas de entrega</option>
+                            <option value="Na pizzaria">Na pizzaria</option>
+                            <option value="No endereço cadastrado">No endereço cadastrado</option>
                         </select>
                     </div>
                     <button id="enviar" type="submit" class="btn btn-success w-100">Enviar Pedido</button>
