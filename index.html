@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Faça o seu pedido">
+    <meta name="description" content="Faça seu pedido!">
+    <meta property="og:title" content="Pizza Emanuelly">
+    <meta content="Pizzaria Emanuelly, delivery app, delivery, sistema, aplicativo, web delivery, pedidos online, pedidos" name="keywords">
     <meta name="author" content="Pedro Gurgel">
     <link rel="icon" href="./img/logo.jpeg">
     <link rel="stylesheet" href="style.css">
@@ -16,8 +18,8 @@
     <main class="container">
         <div class="row vh-90 align-items-center justify-content-center">
             <div class="col-sm-8 col-md-6 col-lg-4 rounded p-2 shadow">
-                <div class="row justify-content-center md-4">
-                    <img src="./img/logo.jpeg" class="img-fluid" alt="">
+                <div class="row justify-content-center md-4 img">
+                    <img src="./img/logo.jpeg" class="img-fluid" alt="logo da pizzaria">
                 </div>
                 <form action="">
                     <div class="mb-4">
@@ -34,46 +36,46 @@
                     </div>
                     <div class="mb-4">
                     <label for="" class="form-label">Menu</label><br>
-                    <button type="button" id="opcPizza" class="btn btn-primary mt-1">Pizzas</button>
+                    <button type="button" id="opcPizza" onclick="ocultar()" class="btn btn-primary mt-1">Pizzas</button>
                     <button type="button" id="opcHamburguer" class="btn btn-primary mt-1">Hambúrgueres</button>
-                    <button type="button" class="btn btn-primary mt-1">Guloseimas</button>
+                    <button type="button" id="opcGuloseima" class="btn btn-primary mt-1">Guloseimas</button>
                     <button type="button" id="opcBebidaSuco" class="btn btn-primary mt-1">Bebidas e Sucos</button>
                     </div>
                     <div class="mb-4" id="pizzas">
                         <label for="inputState">Pizza<span style="color: red;">*</span></label>
-                        <select id="pizza" class="form-select" aria-label="Click para abir as opções de pizzas">
+                        <select id="pizza"  class="form-select" aria-label="Click para abir as opções de pizzas">
                             <option value="">Click para abir as opções de pizzas</option>
-                            <option value="Pizza de Calabresa">Calabresa</option>
-                            <option value="Pizza de Frango">Frango</option>
-                            <option value="Pizza de Frango com Catupiry">Frango com Catupiry</option>
-                            <option value="Pizza de Carne de sol">Carne de sol</option>
-                            <option value="Pizza de Carne de sol com Catupiry">Carne de sol com Catupiry</option>
-                            <option value="Pizza de à portuguesa">Portuguesa</option>
-                            <option value="Pizza de Queijo">Queijo</option>
-                            <option value="Pizza de à Americana">Americana</option>
-                            <option value="Pizza de Atum">Atum</option>
-                            <option value="Pizza 4 Queijos">4 Queijos</option>
-                            <option value="Pizza doce - chocolate e Cartola">Chocolate e Cartola</option>                            
+                            <option id="pizzaCalabresa" value="Pizza de Calabresa">Calabresa</option>
+                            <option id="pizzaFrango" value="Pizza de Frango">Frango</option>
+                            <option id="pizzaFrangCatu" value="Pizza de Frango com Catupiry">Frango com Catupiry</option>
+                            <option id="pizzaCarneSol" value="Pizza de Carne de sol">Carne de sol</option>
+                            <option id="pizzaCarneSolCapury" value="Pizza de Carne de sol com Catupiry">Carne de sol com Catupiry</option>
+                            <option id="pizzaPortu" value="Pizza de à portuguesa">Portuguesa</option>
+                            <option id="pizzaQueijo" value="Pizza de Queijo">Queijo</option>
+                            <option id="pizzaAmerica" value="Pizza de à Americana">Americana</option>
+                            <option id="pizzaAtum" value="Pizza de Atum">Atum</option>
+                            <option id="pizza4Queijo" value="Pizza 4 Queijos">4 Queijos</option>
+                            <option id="pizzaDoce" value="Pizza doce - chocolate e Cartola">Chocolate e Cartola</option>                            
                         </select>
                     </div>
                     <div class="mb-4" id="tamanhos">
                         <label for="inputState">Tamanho da pizza <span style="color: red;">*</span></label>
                         <select id="tamanho" class="form-select" aria-label="Default select example">
                             <option value="">Selecione o tamanho da Pizza</option>
-                            <option value="Tamanho P">Tamanho: P</option>
-                            <option value="Tamanho M">Tamanho: M</option>
-                            <option value="Tamanho G">Tamanho: G</option>
-                            <option value="Tamanho GG">Tamanho: GG</option>
-                            <option value="Tamanho XG">Tamanho: XG</option>
+                            <option id="tamanhoP" value="Tamanho P">Tamanho: P</option>
+                            <option id="tamanhoM" value="Tamanho M">Tamanho: M</option>
+                            <option id="tamanhoG" value="Tamanho G">Tamanho: G</option>
+                            <option id="tamanhoGG" value="Tamanho GG">Tamanho: GG</option>
+                            <option id="tamanhoXG" value="Tamanho XG">Tamanho: XG</option>
                         </select>
                     </div>
                     <div class="mb-4" id="bordas">
                         <label for="inputState">Borda<span style="color: red;">*</span></label>
                         <select id="borda" class="form-select" aria-label="Default select example">
                             <option value="">Selecione o tipo de borda</option>
-                            <option value="Borda: Catupiry">Catupiry</option>
-                            <option value="Borda: Chocolate">Chocolate</option>
-                            <option value="Borda: Sem borda">Sem borda</option>
+                            <option id="catupiry" value="Borda: Catupiry">Catupiry</option>
+                            <option id="chocolte" value="Borda: Chocolate">Chocolate</option>
+                            <option id="semBorda" value="Borda: Sem borda">Sem borda</option>
                         </select>
                     </div>
                    
@@ -114,9 +116,18 @@
                             <option value="Suco: Cupuaçu">Cupuaçu</option>
                         </select>
                     </div>
+                    <div class="mb-4" id="guloseimas">
+                        <label for="inputState">Guloseimas <span style="color: red;">*</span></label>
+                        <select id="guloseima" class="form-select" aria-label="Default select example">
+                            <option value="">Click para abir as opções de guloseimas</option>
+                            <option value="Bebida: Coca-cola 2L">Sorvete</option>
+                            <option value="Bebida: Coca-cola 1L">Açai</option>
+                            
+                        </select>
+                    </div>
                     <div class="mb-4">
                         <label for="inputState">Forma de pagamento: <span style="color: red;">*</span></label>
-                        <select id="pagamento" class="form-select" aria-label="Default select example">
+                        <select id="" class="form-select" aria-label="Default select example">
                             <option value="">Click para abir as formas de pagamento</option>
                             <option value="Pix">Pix</option>
                             <option value="Dinheiro físico">Dinheiro físico</option>
@@ -131,16 +142,22 @@
                             <option value="No endereço cadastrado">No endereço cadastrado</option>
                         </select>
                     </div>
-                    <button id="enviar" type="submit" class="btn btn-success w-100">Enviar Pedido</button>
+                    <div class="mb-4">
+                        <label for="inputStste">Total:</label>
+                        <div class="mb-4 ms-2" id="total"></div>
+                    </div>
+                    <button id="enviar" type="submit" class="btn btn-success w-100 form-control">Enviar Pedido</button>
                 </form>
             </div>
         </div>
     </main>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+    </script>
+    <script src="./scripts/addValue.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/switch.js"></script>
 </body>
 
-</html>
+</html>pagamento
