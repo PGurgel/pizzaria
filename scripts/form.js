@@ -1,4 +1,4 @@
-const evento = document.getElementById('enviar')
+const evento = document.getElementById('enviar');
 const enviarFormulario = () => {
     let nome = document.getElementById('nome').value;
     let bairro = document.getElementById('bairro').value;
