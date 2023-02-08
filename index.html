@@ -25,7 +25,7 @@
                 <div class="row justify-content-center md-4 img">
                     <img src="./img/logo.jpeg" class="img-fluid" alt="logo da pizzaria">
                 </div>
-                <form action="">
+                <form>
                     <div class="mb-4">
                         <label for="nome" class="form-label">Nome <span style="color: red;">*</span></label>
                         <input type="text" class="form-control" placeholder="Digite o seu nome" id="nome" required>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="inputState">Forma de pagamento: <span style="color: red;">*</span></label>
-                            <select id="" class="form-select" aria-label="Default select example">
+                            <select id="pagamento" class="form-select" aria-label="Default select example">
                                 <option name="">Click para abir as formas de pagamento</option>
                                 <option name="Pix">Pix</option>
                                 <option name="Dinheiro físico">Dinheiro físico</option>
@@ -163,7 +163,7 @@
                             <label for="inputStste">Total:</label>
                             <div class="mb-4 ms-2" id="total"></div>
                         </div>
-                        <button id="enviar" type="submit" class="btn btn-success w-100 form-control">Enviar
+                        <button id="enviar" type="button" class="btn btn-success w-100 form-control">Enviar
                             Pedido</button>
                     </div>
                 </form>
@@ -177,5 +177,5 @@
     <script src="./scripts/form.js"></script>
     <script src="./scripts/switch.js"></script>
 </body>
-
+<script src="./scripts/form.js"></script>
 </html>
