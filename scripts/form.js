@@ -9,7 +9,8 @@ const enviarFormulario = () => {
     let hamburguer = document.getElementById('hamburguer').name;
     let bebidas = document.getElementById('bebidas').name;
     let pagamento = document.getElementById('pagamento').value;
+    let valor = document.getElementById('total').innerHTML;
     let numero = 558499150415;
-var win = window.open(`https://wa.me/${numero}?text=Nome:%20${nome}%0DBairro:%20${bairro}%0DRua:%20${endereco}%0DPedido:%20${pizza}%20${borda}%20${tamanho}%0D${bebidas}%0D${hamburguer}%0DPagamento:%20${pagamento}`,'_blank');
+var win = window.open(`https://wa.me/${numero}?text=Nome:%20${nome}%0DBairro:%20${bairro}%0DRua:%20${endereco}%0DPedido:%20${pizza}%20${borda}%20${tamanho}%0D${bebidas}%0D${hamburguer}%0DPagamento:%20${pagamento}%0DValor:%20$${valor}`,'_blank');
 }
 evento.addEventListener('click', enviarFormulario);
