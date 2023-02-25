@@ -4,14 +4,16 @@ var btnBebidaSuco = document.getElementById("opcBebidaSuco");
 var btnGuloseima = document.getElementById('opcGuloseima');
 
 btnPizza.addEventListener('click', function () {
-    if (document.getElementById('pizzas').style.display === 'grid' && document.getElementById('tamanhos').style.display === 'grid' && document.getElementById('bordas').style.display === 'grid') {
+    if (document.getElementById('pizzas').style.display === 'grid' && document.getElementById('tamanhos').style.display === 'grid' && document.getElementById('bordas').style.display === 'grid' && document.getElementById('qnts').style.display === 'grid') {
         document.getElementById('pizzas').style.display = 'none';
         document.getElementById('tamanhos').style.display = 'none';
         document.getElementById('bordas').style.display = 'none';
+        document.getElementById('qnts').style.display = 'none';
     } else {
         document.getElementById('pizzas').style.display = 'grid';
         document.getElementById('tamanhos').style.display = 'grid';
         document.getElementById('bordas').style.display = 'grid';
+        document.getElementById('qnts').style.display = 'grid';
     }
 
 })
