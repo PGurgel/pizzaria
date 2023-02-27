@@ -6,8 +6,8 @@ const enviarFormulario = () => {
     let pizza = document.getElementById('pizza').name;
     let tamanho = document.getElementById('tamanho').name;
     let borda = document.getElementById('borda').name;
-    let hamburguer = document.getElementById('hamburguer').name;
-    let bebidas = document.getElementById('bebidas').name;
+    let hamburguer = document.getElementById('hamburguer').value;
+    let bebidas = document.getElementById('bebidas').value;
     let pagamento = document.getElementById('pagamento').value;
     let valor = document.getElementById('total').innerHTML;
     let numero = 558499150415;

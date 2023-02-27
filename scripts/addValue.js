@@ -6,6 +6,6 @@ let preco = document.getElementById('total');
 const PizzaEvent = document.querySelector(".tudo");
  
 PizzaEvent.addEventListener('click', () => {
-  preco.innerHTML = (+pizza.value)+(+tamanho.value)+(+borda.value);
+  preco.innerHTML =(+pizza.value)+(+tamanho.value)+(+borda.value);
 });
 
