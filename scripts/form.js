@@ -20,10 +20,11 @@ const enviarFormulario = () => {
     let bebida = document.getElementById("bebidas");
     let opcaoBebida = bebida.options[bebida.selectedIndex].innerHTML;
 
+    let retirada = document.getElementById('retirada').value;
     let pagamento = document.getElementById('pagamento').value;
     let valor = document.getElementById('total').innerHTML;
     let numero = 558499150415;
-    var win = window.open(`https://wa.me/${numero}?text=Nome:%20${nome}%0DBairro:%20${bairro}%0DRua:%20${endereco}%0DPedido:%20${opcaoPizza}%0D${opcaoBorda}%0D${opcaoTamanho}%0D${opcaoBebida}%0D${opcaoHamburguer}%0DPagamento:%20${pagamento}%0DValor:%20$${valor}`, '_blank');
+    var win = window.open(`https://wa.me/${numero}?text=Nome:%20${nome}%0DBairro:%20${bairro}%0DRua:%20${endereco}%0DPedido:%20${opcaoPizza}%0D${opcaoBorda}%0D${opcaoTamanho}%0D${opcaoBebida}%0D${opcaoHamburguer}%0DRetirada:%20${retirada}%0DPagamento:%20${pagamento}%0DValor:%20$${valor}`, '_blank');
 }
 evento.addEventListener('click', enviarFormulario);
 
