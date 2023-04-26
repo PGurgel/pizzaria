@@ -3,6 +3,6 @@
     font-weight: bold;
 }
 
-#pizzas, #tamanhos, #bordas, #hamburgueres, #bebidasSucos, #guloseimas, #qnts {
+#pizzas, #tamanhos, #bordas, #hamburgueres, #bebidasSucos, #guloseimas, #qnts, #pizzaMeta {
     display: none;
 }
