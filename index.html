@@ -148,46 +148,39 @@
                         </div>
                         <div class="mb-4" id="hamburgueres">
                             <label for="inputState">Hambúrguer<span style="color: red;">*</span></label>
-                            <select id="hamburguer" class="form-select" aria-label="Default select example">
+                            <select id="hamburguer" class="form-select hamburguer" aria-label="Default select example">
                                 <option name=""></option>
-                                <option name="Hambúrguer">Hambúrguer</option>
-                                <option name="X-Frango">X-Frango</option>
-                                <option name="X-Calabresa">X-Calabresa</option>
-                                <option name="X-Bacon">X-Bacon</option>
-                                <option name="Completo">Completo</option>
-                                <option name="Bauru">Bauru</option>
-                                <option name="A moda da casa">A moda da casa</option>
+                                <option class="hamburguer" id="hamburguer" value="7" name="Hambúrguer">Hambúrguer</option>
+                                <option class="hamburguer" id="hamburguer" value="8" name="X-Frango">X-Frango</option>
+                                <option class="hamburguer" id="hamburguer" value="8" name="X-Calabresa">X-Calabresa</option>
+                                <option class="hamburguer" id="hamburguer" value="8" name="X-Bacon">X-Bacon</option>
+                                <option class="hamburguer" id="hamburguer" value="10" name="Completo">Completo</option>
+                                <option class="hamburguer" id="hamburguer" value="14" name="A moda da casa">A moda da casa</option>
                             </select>
                         </div>
                         <div class="mb-4" id="bebidasSucos">
                             <label for="inputState">Bebidas e Sucos<span style="color: red;">*</span></label>
                             <select id="bebidas" class="form-select" aria-label="Default select example">
                                 <option name=""></option>
-                                <option name="Bebida: Coca-cola 2L">Coca-cola 2L</option>
-                                <option name="Bebida: Coca-cola 1L">Coca-cola 1L</option>
-                                <option name="Bebida: Guarana 2L">Guarana 2L</option>
-                                <option name="Bebida: Guarana 1L">Guarana 1L</option>
-                                <option name="Bebida: Guarana Lata 350ml">Guarana Lata 350ml</option>
-                                <option name="Bebida: Fanta Lata 350ml">Fanta Lata 350ml</option>
-                                <option name="Bebida: Água">Água</option>
-                                <option name="Suco: Maracujá">Maracujá</option>
-                                <option name="Suco: Acerola">Acerola</option>
-                                <option name="Suco: Graviola">Graviola</option>
-                                <option name="Suco: Goiaba">Goiaba</option>
-                                <option name="Suco: Caju">Caju</option>
-                                <option name="Suco: Laranja">Laranja</option>
-                                <option name="Suco: Tamarindo">Tamarindo</option>
-                                <option name="Suco: Uva">Uva</option>
-                                <option name="Suco: Cajá">Cajá</option>
-                                <option name="Suco: Cupuaçu">Cupuaçu</option>
+                                <option value="10" name="Bebida: Coca-cola 2L">Coca-cola 2L</option>
+                                <option value="7" name="Bebida: Coca-cola 1L">Coca-cola 1L</option>
+                                <option value="10" name="Bebida: Guarana 2L">Guarana 2L</option>
+                                <option value="10" name="Bebida: Guarana 1L">Guarana 1L</option>
+                                <option value="2" name="Bebida: Água">Água 500ml</option>
+                                <option value="6" name="Suco: Maracujá">Maracujá</option>
+                                <option value="4" name="Suco: Acerola">Acerola</option>
+                                <option value="4" name="Suco: Goiaba">Goiaba</option>
+                            
                             </select>
                         </div>
                         <div class="mb-4" id="guloseimas">
                             <label for="inputState">Guloseimas<span style="color: red;">*</span></label>
                             <select id="guloseima" class="form-select" aria-label="Default select example">
                                 <option name=""></option>
-                                <option name="Bebida: Coca-cola 2L">Sorvete</option>
-                                <option name="Bebida: Coca-cola 1L">Açai</option>
+                                <option value="3" name="">Sorvete</option>
+                                <option value="7" name="">Açai</option>
+                                <option value="1" name="">Picolé</option>
+                                <option value="7" name="">Cupuaçu</option>
                             </select>
                         </div>
                         <div class="mb-4">
