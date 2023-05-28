@@ -16,7 +16,7 @@ const enviarFormulario = () => {
 
     let hamburguer = document.getElementById("hamburguer");
     let opcaoHamburguer = hamburguer.options[hamburguer.selectedIndex].innerHTML;
-    
+
     let bebida = document.getElementById("bebidas");
     let opcaoBebida = bebida.options[bebida.selectedIndex].innerHTML;
 

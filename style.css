@@ -1,8 +1,15 @@
-.container{
-    color:#000;
+.container {
+    color: #000;
     font-weight: bold;
 }
 
-#pizzas, #tamanhos, #bordas, #hamburgueres, #bebidasSucos, #guloseimas, #qnts, #pizzaMeta {
+#pizzas,
+#tamanhos,
+#bordas,
+#hamburgueres,
+#bebidasSucos,
+#guloseimas,
+#qnts,
+#pizzaMeta {
     display: none;
 }
