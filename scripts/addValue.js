@@ -9,6 +9,25 @@ const PizzaEvent = document.querySelector(".tudo");
 
 PizzaEvent.addEventListener('click', () => {
 
-  total.innerHTML = ((+pizza.value) + (+tamanho.value) + (+borda.value)) * (qnts.value)
+  let sum = 0;
+
+  if (pizza.value !== '') {
+    sum += +pizza.value;
+  }
+
+  if (tamanho.value !== '') {
+    sum += +tamanho.value;
+  }
+
+  if (borda.value !== '') {
+    sum += +borda.value;
+  }
+
+  if (hamburguer.value !== '') {
+    sum += +hamburguer.value;
+  }
+  
+
+  total.innerHTML = sum * (qnts.value);
 
 });
